@@ -1,0 +1,163 @@
+/* General styles for the search results page */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: left;
+    background-color: #5c85a3(0, 0, 0, 0.85);
+    padding: 1rem 2rem;
+    background-color: #5c85a3;
+    color: #fff;
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+  }
+  
+  .logo3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-right: auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .image-logo img {
+    width: 50px; /* Adjust size as needed */
+    height: 50px; 
+    margin-left: 150px;/* Ensure equal width and height for a perfect circle */
+    border-radius: 50%; /* Makes it circular */
+    object-fit: cover; /* Ensures the image covers the circular frame */
+    border: 2px solid #ddd; /* Optional: Adds a light border */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Optional: Adds a slight shadow */
+  }
+  
+  .nav{
+    margin-right: 50px;
+  }
+  
+  .nav a {
+    margin: 0 1rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;   
+    color: #fff;   /*#0056b3,#FDAB95*/ 
+    margin-top: 7px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .nav a:hover {
+    text-decoration: none;
+  }
+
+  .auth-buttons {
+    display: flex;
+    align-items: center;
+  }
+  
+  .welcome-text {
+    margin-right: 1rem;
+    margin-left: 30px;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    color: #ffd700 !important;  /*#5c85a3*/
+  }
+  
+  .login-button, .logout-button {
+    margin-left: 30px;
+    background-color: #fdab95;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+  }
+  
+  .login-button:hover, .logout-button:hover {
+    background-color: #e69580;
+  }  
+  
+.search-results {
+    font-family: Arial, sans-serif;
+    padding: 2rem;
+    background-color: #f9f9f9;
+    min-height: 100vh;
+}
+
+/* Heading for the results */
+.search-results h1 {
+    font-size: 2rem;
+    color: #007bff;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+/* Error message styling */
+.error {
+    color: red;
+    font-size: 1.2rem;
+    text-align: center;
+    margin: 1rem 0;
+}
+
+/* Loading message styling */
+.loading {
+    color: #555;
+    font-size: 1.2rem;
+    text-align: center;
+    margin: 1rem 0;
+}
+
+/* Container for all results */
+.results {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+/* Each result box */
+.result-box {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1.5rem;  /* Increased padding for more space */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 350px;  /* Increased width */
+    text-align: left;
+    transition: all 0.3s ease;
+}
+
+/* Heading inside each result box */
+.result-box h3 {
+    font-size: 1.6rem;  /* Slightly larger heading */
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+/* Text inside each result box */
+.result-box p {
+    margin: 0.5rem 0;
+    font-size: 1.1rem;  /* Increased font size for better readability */
+    color: #555;
+}
+
+/* Emphasized labels inside result boxes */
+.result-box p strong {
+    color: #333;
+}
+
+/* Add hover effect for result boxes */
+.result-box:hover {
+    border-color: #007bff;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+    transform: translateY(-2px);
+    transition: all 0.3s ease;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .result-box {
+        width: 90%;  /* Adjust to fit smaller screens */
+    }
+}

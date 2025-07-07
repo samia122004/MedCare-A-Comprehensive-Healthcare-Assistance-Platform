@@ -1,0 +1,255 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f0f2f5;
+  color: #5c85a3;
+}
+
+.App {
+  text-align: center;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: left;
+  background-color: #5c85a3(0, 0, 0, 0.85);
+  padding: 1rem 2rem;
+  background-color: #5c85a3;
+  color: #fff;
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+}
+
+.logo1 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-right: auto;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.image-logo img {
+  width: 50px; /* Adjust size as needed */
+  height: 50px; 
+  margin-left: 150px;/* Ensure equal width and height for a perfect circle */
+  border-radius: 50%; /* Makes it circular */
+  object-fit: cover; /* Ensures the image covers the circular frame */
+  border: 2px solid #ddd; /* Optional: Adds a light border */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Optional: Adds a slight shadow */
+}
+
+.nav{
+  margin-right: 50px;
+}
+
+.nav a {
+  margin: 0 1rem;
+  font-family: Georgia, 'Times New Roman', Times, serif;   
+  color: #fff;   /*#0056b3,#FDAB95*/ 
+  margin-top: 7px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav a:hover {
+  text-decoration: none;
+}
+
+.auth-buttons {
+  display: flex;
+  align-items: center;
+}
+
+.welcome-text {
+  margin-right: 1rem;
+  margin-left: 30px;
+  font-weight: bold;
+  font-size: 20px;
+  font-family: 'Times New Roman', Times, serif;
+  color: #ffd700 !important;  /*#5c85a3*/
+}
+
+.login-button, .logout-button {
+  margin-left: 30px;
+  background-color: #fdab95;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.login-button:hover, .logout-button:hover {
+  background-color: #e69580;
+}
+
+/* Main image section */
+.main-image {
+  background-image: url('./images/homepage.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh; /* Reduced height for the image */
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-heading {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Styling for the search bar */
+.search-bar {
+  position: relative;
+  width: 70%; /* Adjusted width for a more balanced look */
+  margin: 0 auto;
+}
+
+.search-input {
+  width: 110%;
+  padding: 0.80rem 3rem 0.75rem 1rem; /* Space for icon placement */
+  border: 1px solid #ddd;
+  border-radius: 25px; /* Rounded edges */
+  font-size: 1rem;
+  outline: none;
+  background-color: #fff;
+}
+
+.search-input:focus {
+  border-color: #5c85a3;
+  box-shadow: 0 0 5px #5c85a3(0, 123, 255, 0.5);
+}
+
+.search-icon {
+  position: absolute;
+  left: 16rem; /* Properly aligns the icon inside the input */
+  top: 50%;
+  transform: translateY(-50%);
+  color: #5c85a3;
+  cursor: pointer;
+  font-size: 1.5rem; /* Increased icon size for better visibility */
+}
+
+.search-icon:hover {
+  color: #5c85a3;
+}
+
+.search-button:focus {
+  outline: none;
+}
+
+
+.results-page {
+  padding: 2rem;
+}
+
+.results {
+  margin-top: 1rem;
+}
+
+.result-box {
+  border: 1px solid #ccc;
+  margin: 0.5rem 0;
+  padding: 1rem;
+  border-radius: 5px;
+}
+/* Scroll Section */
+.scroll-section {
+  position: absolute;
+  bottom: 4%; /* Position it near the bottom of the image */
+  width: 100%;
+  text-align: center;
+}
+
+.scroll-text {
+  font-size: 1rem;
+  font-style: italic;
+  color: #5c85a3;
+  cursor: pointer;
+}
+
+.down-arrow {
+  font-size: 2rem;
+  color: #5c85a3;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+/* Blog Section */
+.blog-section {
+  padding: 3rem;
+  background-color: #f9f9f9;
+}
+
+.blog-boxes {
+  display: flex;
+  justify-content: space-around;
+  gap: 2rem;
+}
+
+.blog-box {
+  width: 30%;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.blog-box:hover {
+  transform: translateY(-10px);
+}
+
+.blog-image {
+  width: 100%;
+  height: auto;
+  background-image: './images/Blog1.jpg';
+  object-fit: cover;
+}
+
+.blog-content {
+  padding: 1rem;
+  background-color: #fff;
+}
+
+.blog-content h3 {
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.blog-content p {
+  color: #555;
+  font-size: 1rem;
+}
+
+.read-more {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #007bff;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.read-more:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+.arrow {
+  font-size: 1.2rem;
+  transition: transform 0.3s ease; /* Smooth transition */
+}
+
+.read-more:hover .arrow {
+  transform: translateX(8px); /* Moves the arrow when hovered */
+}

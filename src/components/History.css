@@ -1,0 +1,81 @@
+/* Container for history page */
+.history-container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column; /* Ensures title is separate */
+    align-items: center;
+    padding: 40px;
+    background-color: #f8f9fa;
+}
+
+/* Title outside the card */
+.history-title {
+    font-size: 32px;
+    font-weight: bold;
+    color: #4a4e69;
+    margin-top: 60px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* Wrapper for history cards */
+.history-wrapper {
+    width: 90%;
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column; /* Arranges history cards in rows */
+    gap: 20px;
+}
+
+/* Individual history card */
+.history-card {
+    background: white;
+    padding: 20px;
+    margin-bottom: 10px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Hover effect */
+.history-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Disease name */
+.history-disease {
+    font-size: 20px;
+    font-weight: bold;
+    color: #2a9d8f;
+    flex: 2;
+    text-align: left;
+}
+
+/* Symptoms */
+.history-symptoms {
+    font-size: 16px;
+    color: #495057;
+    flex: 3;
+    text-align: left;
+}
+
+/* Date */
+.history-date {
+    font-size: 14px;
+    color: #495057;  /*#adb5bd, #8c98a3*/
+    flex: 1;
+    text-align: right;
+}
+
+/* No history found */
+.history-no-data {
+    font-size: 18px;
+    color: #6c757d;
+    margin-top: 25px;
+    text-align: center;
+}
